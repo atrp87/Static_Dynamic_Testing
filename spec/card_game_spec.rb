@@ -15,7 +15,8 @@ class TestCardGame < MiniTest::Test
 	end
 
 	def test_check_for_ace()
-        assert_equal(true, @game.check_for_ace(@card2))
+        assert_equal(true, @game.check_for_ace(@card1))
+        assert_equal(false, @game.check_for_ace(@card2))
 	end
 
 	def test_highest_card()

@@ -29,5 +29,7 @@ def self.cards_total(cards) # "self" wont be executed because its in the method 
   for card in cards
     total += card.value
     return "You have a total of" + total # this should be after the first end as it will return after this first iteration.
+    # total needs to be interpolated or converted into a string
   end
 end
+# missing a closing end
